@@ -1,0 +1,29 @@
+.ct-legend {
+  padding: 0;
+  font-family: sans-serif;
+
+  li {
+    position: relative;
+    padding-left: 1.3em;
+    margin-bottom: 0.3em;
+    list-style-type: none;
+  }
+
+  li::before {
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    top: 0.1em;
+    left: 0;
+    content: '';
+    border-radius: 1em;
+  }
+
+  $ct-series-colors: (#00ff00, #cc9900, #ff3300, black) !default;
+
+  @for $i from 0 to length($ct-series-colors) {
+    .ct-series-#{$i}::before {
+      background-color: nth($ct-series-colors, $i + 1);
+    }
+  }
+}

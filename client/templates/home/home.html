@@ -1,0 +1,60 @@
+<head>
+</head>
+<template name="Home">
+    <style>
+
+        /* Use this selector to override the line style on a given series */
+        .ct-series-a .ct-line {
+            /* Set the colour of this series line */
+            stroke: #00ff00;
+            /* Control the thikness of your lines */
+            stroke-width: 5px;
+        }
+        .ct-series-a .ct-point{
+            stroke: #00ff00;
+        }
+
+        /* Use this selector to override the line style on a given series */
+        .ct-series-b .ct-line {
+            /* Set the colour of this series line */
+            stroke: #cc9900;
+            /* Control the thikness of your lines */
+            stroke-width: 5px;
+        }
+        .ct-series-b .ct-point{
+            stroke: #cc9900;
+        }
+
+        /* Use this selector to override the line style on a given series */
+        .ct-series-c .ct-line {
+            /* Set the colour of this series line */
+            stroke: #ff3300;
+            /* Control the thikness of your lines */
+            stroke-width: 5px;
+        }
+        .ct-series-c .ct-point{
+            stroke: #ff3300;
+        }
+
+        /* Use this selector to override the line style on a given series */
+        .ct-series-d .ct-line {
+            /* Set the colour of this series line */
+            stroke: black;
+            /* Control the thikness of your lines */
+            stroke-width: 5px;
+        }
+        .ct-series-d .ct-point{
+            stroke: black;
+        }
+
+    </style>
+  <div class="home container" style="">
+    <h1>Find me in app\client\templates\home\home</h1>
+    <button type="button" class="btn btn-primary">Refresh</button>
+
+      <div id="chart_container">
+          <div class="ct-chart ct-perfect-fourth"></div>
+          <ul class="ct-legend"></ul>
+      </div>
+  </div>
+</template>
